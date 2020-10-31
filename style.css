@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddc7ce;
+    background-image: url('./assets/cup.png');
+    background-repeat: no-repeat;
+    background-position: 600px 30%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 280px;
+    margin-top: 100px;
+    padding: 15px;
+    resize: none;
+    font-size: 20px;
+}
+
+textarea:focus { 
+    outline: none;
+    border-color:  #9b85a5;
+    box-shadow: 0 0 10px  #745f7e;
+}
+
+.keyboard {
+    position: relative;
+    margin-top: 30px;
+    border: 5px solid #9b85a5;
+    border-radius: 3px;
+    padding: 10px;
+    user-select: none; 
+}
+
+.row {
+    display: flex;
+}
+
+.key {
+    height: 40px;
+    width: 40px;
+    padding: 10px 27.5px;
+    margin: 3px;
+    color: white;
+    background-color: #a582a7;
+    border-radius: 3px;
+}
+
+.key:hover {
+    cursor: pointer;
+    background-color: #865d88;
+}
+
+.pressed{
+    height: 38px;
+    width: 35px;
+    padding: 10px 26px;
+    background-color: #865d88;
+    border:  1px solid white;
+}
+
+.pressed .altRight .ctrlLeft{
+    height: 40px;
+    width: 40px;
+    padding: 10px 27.5px;
+    margin: 3px;
+    color: white;
+    background-color: #a582a7;
+    border-radius: 3px;
+}
+.caps-pressed{
+    height: 38px;
+    width: 35px;
+    padding: 10px 26px;
+    background-color: #865d88;
+    border:  1px solid white;
+}
+.space {
+    width: 355px;
+}
+
+.shiftRight {
+    width: 90px;
+}
+
+.ctrlLeft {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.altLeft {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.altRight {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.backspace {
+    width: 70px;
+    padding-left: 10px;
+    padding-top: 12px;
+}
+
+.shiftLeft {
+    width: 60px;
+}
+
+.winLeft {
+    width: 55px;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.ctrlRight {
+    width: 55px;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.tab {
+    width: 75px;
+}
+
+.enter {
+    position: absolute;
+    right: 8px;
+    top: 55px;
+    height: 87px;
+    padding-top: 40px;
+}
+
+.capsLock {
+    width: 74px;
+}
+
+.arrow {
+    position: relative;
+    height: 18px;
+    bottom: -20px;
+    padding-bottom: 15px;
+    padding-top: 4px;
+    padding-right: 25px;
+    margin-right: 10px;
+    line-height: 10px;
+}
+
+.arrowUp {
+    position: absolute;
+    bottom: 33px;
+    right: 76px;
+    transform: rotate(180deg);
+}
+
+*{
+    font-size: 20px;
+}
+.functional {
+    font-size: 12px;  
+}
