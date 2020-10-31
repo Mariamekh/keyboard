@@ -9,6 +9,9 @@ body {
     background-image: url('./assets/cup.png');
     background-repeat: no-repeat;
     background-position: 600px 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+color: #512c63;
 }
 
 .container {
@@ -26,10 +29,10 @@ textarea {
     font-size: 20px;
 }
 
-textarea:focus { 
+textarea:focus {
     outline: none;
-    border-color:  #9b85a5;
-    box-shadow: 0 0 10px  #745f7e;
+    border-color: #9b85a5;
+    box-shadow: 0 0 10px #745f7e;
 }
 
 .keyboard {
@@ -38,7 +41,12 @@ textarea:focus {
     border: 5px solid #9b85a5;
     border-radius: 3px;
     padding: 10px;
-    user-select: none; 
+    user-select: none;
+}
+
+.reference {
+    text-align: center;
+    font-size: 14px;
 }
 
 .row {
@@ -60,15 +68,15 @@ textarea:focus {
     background-color: #865d88;
 }
 
-.pressed{
+.pressed {
     height: 38px;
     width: 35px;
     padding: 10px 26px;
     background-color: #865d88;
-    border:  1px solid white;
+    border: 1px solid white;
 }
 
-.pressed .altRight .ctrlLeft{
+.pressed .altRight .ctrlLeft {
     height: 40px;
     width: 40px;
     padding: 10px 27.5px;
@@ -77,13 +85,15 @@ textarea:focus {
     background-color: #a582a7;
     border-radius: 3px;
 }
-.caps-pressed{
+
+.caps-pressed {
     height: 38px;
     width: 35px;
     padding: 10px 26px;
     background-color: #865d88;
-    border:  1px solid white;
+    border: 1px solid white;
 }
+
 .space {
     width: 355px;
 }
@@ -168,9 +178,10 @@ textarea:focus {
     transform: rotate(180deg);
 }
 
-*{
+* {
     font-size: 20px;
 }
+
 .functional {
-    font-size: 12px;  
+    font-size: 12px;
 }

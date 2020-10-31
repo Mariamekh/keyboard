@@ -5,6 +5,11 @@ textArea.setAttribute("autofocus", "autofocus");
 textArea.setAttribute("rows", "15");
 textArea.setAttribute("cols", "90");
 
+const textReference = document.createElement("p");
+textReference.classList.add('reference');
+textReference.innerHTML = "Press Win + ShiftLeft or Alt + ShiftLeft to switch languages";
+document.body.append(textReference);
+
 const keyBoard = document.createElement("div");
 
 let lang,
