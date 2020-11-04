@@ -7,7 +7,7 @@ textArea.setAttribute("cols", "90");
 
 const textReference = document.createElement("p");
 textReference.classList.add('reference');
-textReference.innerHTML = "Press Win + ShiftLeft or Alt + ShiftLeft to switch languages";
+textReference.innerHTML = "Press Win + ShiftLeft or Alt + ShiftLeft to switch between languages";
 document.body.append(textReference);
 
 const keyBoard = document.createElement("div");
@@ -405,16 +405,16 @@ document.addEventListener("keydown", (event) => {
 
   if (event.code == "ShiftLeft" && (event.altKey || event.metaKey)) {
     if (allKeys[0].innerHTML === "`") {
-      localStorage.clear();
-      langStorage = geoLower;
+      
+       langStorage = geoLower;
 
       localStorage.setItem(lang, JSON.stringify(langStorage));
       language = JSON.parse(localStorage.getItem(lang));
 
       filling(langStorage);
     } else {
-      localStorage.clear();
-      langStorage = englishLowArr;
+
+       langStorage = englishLowArr;
 
       localStorage.setItem(lang, JSON.stringify(langStorage));
       language = JSON.parse(localStorage.getItem(lang));
@@ -517,7 +517,7 @@ keyBoard.addEventListener("click", (event) => {
     event.target.tagName === "SPAN" &&
     event.target.classList.contains("functional") === false
   ) {
-    textArea.value += event.target.innerHTML;
+    textArea.value += event.target.innerHTMLpr;
     positionStart += 1;
   }
 
