@@ -517,7 +517,7 @@ keyBoard.addEventListener("click", (event) => {
     event.target.tagName === "SPAN" &&
     event.target.classList.contains("functional") === false
   ) {
-    textArea.value += event.target.innerHTMLpr;
+    textArea.value += event.target.innerHTML;
     positionStart += 1;
   }
 
